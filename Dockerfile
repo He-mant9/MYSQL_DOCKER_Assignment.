@@ -1,0 +1,7 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD 123
+ENV MYSQL_DATABASDE pucsdStudents
+ENV MYSQL_USER pucsd
+ENV MYSQL_PASSWORD pucsd
+ADD dev.sql /docker-entrypoint-initdb.d
+EXPOSE 3306
